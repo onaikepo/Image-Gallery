@@ -42,8 +42,9 @@ struct ContentView: View {
         }
     }
     
+    
     var body: some View {
-        
+        NavigationView{
         GeometryReader { proxy in
             VStack {
             TabView(selection: $currentIndex) {
@@ -63,7 +64,8 @@ struct ContentView: View {
                 Spacer()
                 controls
             }
-            }
+            }.navigationBarTitle("Image Gallery")
+        }
     
 }
 }
