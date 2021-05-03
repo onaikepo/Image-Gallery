@@ -61,12 +61,16 @@ struct ContentView: View {
         .onReceive(timer, perform: { _ in
             next()
         })
-                Spacer()
                 controls
+                    .padding()
             }
             }.navigationBarTitle("Image Gallery")
         }
-    
+        HStack {
+            Link (destination: URL(string: "https://www.apple.com/mac")!, label: {
+                      Text("Explore the Mac Range Here")
+                      })
+        }
 }
 }
 
