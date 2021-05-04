@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  Image Gallery
 //
-//  Created by Bowo on 03/05/2021.
+//  Created by Onaikepo on 03/05/2021.
 //
 
 import SwiftUI
@@ -63,6 +63,14 @@ struct ContentView: View {
         })
                 controls
                     .padding()
+                Text("Product Description").font(.largeTitle).bold()
+                ScrollView{    Text("""
+                    Incredibly light and boasting a speedy performance, get your work done anywhere with the MacBook Air (2020). From video-editing to gaming, the Apple M1 chip lets you take on the biggest tasks without draining your battery.
+                    It's 3.5x faster than the previous generation, with eight-cores of power providing an incredible performance. And for whisper-quiet operation, the improved thermal efficiency means it doesn't even need a fan.
+                    With the Retina Display screen, everything from blockbuster movies to everyday browsing is a visual joy.
+                    True Tone technology automatically adjust the display to your environment - so web pages and emails look as natural as if they were printed.
+                    """) .padding() //.frame(width: 300, height: 300, alignment: .topLeading)
+                }
             }
             }.navigationBarTitle("Image Gallery")
         }

@@ -2,7 +2,7 @@
 //  Image_GalleryApp.swift
 //  Image Gallery
 //
-//  Created by Bowo on 03/05/2021.
+//  Created by Onaikepo on 03/05/2021.
 //
 
 import SwiftUI
