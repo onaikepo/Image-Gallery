@@ -48,6 +48,7 @@ struct ContentView: View {
         NavigationView{
         GeometryReader { proxy in
             VStack {
+                ScrollView{
             TabView(selection: $currentIndex) {
             ForEach(1..<numberofImages) {
                 num in Image("\(num)")
@@ -65,7 +66,7 @@ struct ContentView: View {
                 controls
                     .padding()
                 Text("Product Description").font(.largeTitle).bold()
-                ScrollView{
+                
                     Text("""
                     Incredibly light and boasting a speedy performance, get your work done anywhere with the MacBook Air (2020). From video-editing to gaming, the Apple M1 chip lets you take on the biggest tasks without draining your battery.
                     It's 3.5x faster than the previous generation, with eight-cores of power providing an incredible performance. And for whisper-quiet operation, the improved thermal efficiency means it doesn't even need a fan.
